@@ -71,6 +71,18 @@
         </dependency>
     </dependencies>
 
+    <distributionManagement>
+        <repository>
+            <id>private-nexus</id>
+            <name>Trufa Eldorado Nexus</name>
+            <url>http://pilot.eldorado.trufa.local:8081/repository/maven-releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>private-nexus-snapshots</id>
+            <name>Trufa Eldorado Nexus Snapshots</name>
+            <url>http://pilot.eldorado.trufa.local:8081/repository/maven-snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
     <build>
         <plugins>
             <plugin>
